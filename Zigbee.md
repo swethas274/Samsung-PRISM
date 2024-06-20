@@ -53,6 +53,9 @@
  - no IP
  - **connect Zigbee device with Bluetooth devices**
 
+
+<img src="https://csa-iot.org/wp-content/uploads/2022/04/Zigbee-Devices-New-Feature-Blog-01-768x403.png" alt="A thumbnail image" width="1000" height="auto">
+
 | Audience         | Goals                                    |
 |------------------|------------------------------------------|
 | **For Developers** | - Reduce system complexity                |
