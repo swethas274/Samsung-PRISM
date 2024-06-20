@@ -29,13 +29,24 @@
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190610154515/Untitled-Diagram-130.png" alt="A thumbnail image" width="1000" height="auto">
 
-#### ZIGBEE PROTOCOL VARIOUS TYPES:
+### ZIGBEE FOR HOME AUTOMATION
 
-1) **Zigbee Coordinator**: This device starts the network and usually acts as the bridge between the Zigbee network and other networks or the internet.
+- Home Automation is an ideal solution to conserve power.
+- Because it easily connect multiple electronic devices in the home and control them remotely.
+- Bluetooth, Wi-Fi and Zigbee are few examples of wireless technology
+- Due to the Zigbee alliance, most of the smart devices are designed as per the Zigbee Home Automation standard.
+- often connected to the Internet, making them able to be remotely controlled.
+- `based on EEE 802.15.4 standard`
+- low distance communication and consumes less power
+- *eg: smart home light switch*
+- **The biggest advantage of this protocol is that it uses a mesh network.**
+- There are three main types of devices in this technology, i.e. coordinator, routers and end devices
+  
+1) **Zigbee Coordinator**: central or home network
 
-2) **Zigbee Router**: These devices can receive data from other devices and route them to the destination. They can also join additional devices to the network.
+2) **Zigbee Router**: smart devices fully powered and repeat the signals
 
-3) **Zigbee End Device**: These are typically battery-powered devices that send data to the network but do not route data for other devices. They can communicate directly with the coordinator or routers.
+3) **Zigbee End Device**: battery-powered devices (out of range) but connected to the network via routers.
 
 # ZIGBEE DIRECT
 
@@ -92,3 +103,6 @@
 |               | - Compatibility with IoT gateways and cloud services         |
 
 
+#### REFERENCES
+
+- https://www.linkedin.com/pulse/how-use-zigbee-home-automation-mvavaindustrialco-ltd-/
