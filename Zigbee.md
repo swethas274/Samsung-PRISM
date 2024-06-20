@@ -1,29 +1,31 @@
 # ZIGBEE AND BLUETOOTH
 
-| S. No. | Bluetooth                                                                                                              | Zigbee                                                                                                                                                     |
-|--------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.     | The Bluetooth SIG (Special Interest Group) is the organization responsible for managing Bluetooth standards and devices. | The Zigbee Alliance is responsible for managing Zigbee and testing and approving Zigbee-based devices. IEEE standardizes all Zigbee-based protocols.         |
-| 2.     | The frequency range supported in Bluetooth vary from 2.4 GHz to 2.483 GHz.                                             | The frequency range supported in Zigbee is mostly 2.4 GHz worldwide.                                                                                        |
-| 3.     | There are seventy-nine RF channels in Bluetooth.                                                                       | There are sixteen RF channels in Zigbee.                                                                                                                    |
-| 4.     | It uses GFSK modulation technique.                                                                                     | It also uses BPSK and QPSK modulation techniques like UWB.                                                                                                  |
-| 5.     | There is a maximum of 8 cell nodes in Bluetooth.                                                                       | There are more than sixty-five thousand (65000) cell nodes in Zigbee.                                                                                       |
-| 6.     | Bluetooth networks can be built using the point-to-point master-slave approach in which there is one master and up to seven slaves form a piconet, which leads to forming a scatter net which is a linking of two or more piconets. | Zigbee devices can be networked in a variety of generic topologies, including a star, mesh, and others. A cluster can be created by connecting different Zigbee-based network topologies. Zigbee Coordinator, Zigbee Router, and Zigbee Endpoint nodes make up any Zigbee network. |
-| 7.     | Bluetooth requires low bandwidth.                                                                                      | Zigbee also requires low bandwidth but greater than Bluetooth’s bandwidth most of the time.                                                                 |
-| 8.     | The radio signal range of Bluetooth is ten meters.                                                                     | The radio signal range of Zigbee is ten to one hundred meters.                                                                                              |
-| 9.     | Bluetooth was developed under IEEE 802.15.1.                                                                           | Zigbee was developed under IEEE 802.15.4.                                                                                                                   |
-| 10.    | Bluetooth batteries may be recharged.                                                                                  | Zigbee batteries cannot be recharged, but they last longer.                                                                                                 |
-| 11.    | Bluetooth uses high data rates and a lot of power on large packet devices.                                             | Zigbee employs low data rates and little power on small packet devices.                                                                                     |
-| 12.    | Bluetooth employs the Frequency Hopping Spread Spectrum. In frequency hopping, the carrier signal is made to fluctuate in frequency. | Zigbee employs the Direct Spread Spectrum technique. In direct spread spectrum, the original signal is mixed and recovered from a pseudo-random code at transmitter and receiver.                   |
-| 13.    | A network speed of up to 250 megabits per second.                                                                      | A network speed of up to 1 megabit per second.                                                                                                              |
-| 14.    | The time it takes to join a network using Bluetooth is about 3 seconds.                                                | The time it takes to join a network using Zigbee is about 30 milliseconds.                                                                                  |
-| 15.    | Bluetooth’s protocol stack is 250K bytes in size.                                                                      | Zigbee’s protocol stack is 28K bytes in size.                                                                                                               |
-| 16.    | Computer peripherals like wireless keyboards, mice, headsets, and other peripherals are the main use cases for Bluetooth-based applications. Additionally, several wireless remote controls and gesture-controlled devices communicate data via Bluetooth. | Systems built on the Zigbee protocol are intended for wireless sensor networking, and they are more popular with compact and energy-efficient gadgets. Zigbee-based networking is used in a variety of applications, including SCADA system sensors, medical devices, and television remote controls. |
+| S. No. | Bluetooth                                                                                             | Zigbee                                                                                     |
+|--------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 1.     | Managed by Bluetooth SIG.                                                                             | Managed by Zigbee Alliance and standardized by IEEE.                                        |
+| 2.     | Frequency range: 2.4 GHz to 2.483 GHz.                                                                | Frequency range: 2.4 GHz worldwide.                                                         |
+| 3.     | Seventy-nine RF channels.                                                                             | Sixteen RF channels.                                                                        |
+| 4.     | Uses [GFSK](#modulation) modulation.                                                                 | Uses [BPSK](#modulation) and [QPSK](#modulation) modulation.                                                              |
+| 5.     | Maximum of 8 cell nodes.                                                                              | Over 65,000 cell nodes.                                                                     |
+| 6.     | Networks: point-to-point master-slave (piconet), can form scatter nets.                               | Networks: star, mesh, cluster with Coordinator, Router, Endpoint nodes.                     |
+| 7.     | Requires low bandwidth.                                                                               | Requires low bandwidth, slightly higher than Bluetooth.                                     |
+| 8.     | Radio signal range: 10 meters.                                                                        | Radio signal range: 10 to 100 meters.                                                       |
+| 9.     | Developed under IEEE 802.15.1.                                                                        | Developed under IEEE 802.15.4.                                                              |
+| 10.    | Batteries can be recharged.                                                                           | Batteries last longer but cannot be recharged.                                              |
+| 11.    | High data rates, high power for large packets.                                                        | Low data rates, low power for small packets.                                                |
+| 12.    | Uses Frequency Hopping Spread Spectrum.                                                               | Uses Direct Spread Spectrum.                                                                |
+| 13.    | Network speed up to 250 Mbps.                                                                         | Network speed up to 1 Mbps.                                                                 |
+| 14.    | Network join time: about 3 seconds.                                                                   | Network join time: about 30 milliseconds.                                                   |
+| 15.    | Protocol stack size: 250K bytes.                                                                      | Protocol stack size: 28K bytes.                                                             |
+| 16.    | Used in wireless keyboards, mice, headsets, remote controls, gesture devices.                        | Used in wireless sensor networks, SCADA systems, medical devices, TV remote controls.       |
 
+<a name="modulation"></a>
 | Modulation | Full Form                         | Use                                                                                                 |
 |------------|-----------------------------------|-----------------------------------------------------------------------------------------------------|
 | GFSK       | Gaussian Frequency Shift Keying   | Used in Bluetooth and other wireless systems for efficient and robust frequency modulation.         |
 | BPSK       | Binary Phase Shift Keying         | Used in satellite communications and RFID systems for simple and robust binary phase modulation.     |
 | QPSK       | Quadrature Phase Shift Keying     | Used in 4G LTE, satellite communications, and cable modems for efficient data transmission.          |
+
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190610154515/Untitled-Diagram-130.png" alt="A thumbnail image" width="1000" height="auto">
 
@@ -85,3 +87,5 @@
 |               | - Tunneling protocols (e.g., TCP, UDP) support               |
 |               | - Ensuring reliable and secure data transmission            |
 |               | - Compatibility with IoT gateways and cloud services         |
+
+
