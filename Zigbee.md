@@ -31,6 +31,8 @@
 
 ### ZIGBEE FOR HOME AUTOMATION
 
+<img src="https://csa-iot.org/wp-content/uploads/2022/04/Zigbee-Devices-New-Feature-Blog-01-768x403.png" alt="A thumbnail image" width="1000" height="auto">
+
 - Home Automation is an ideal solution to conserve power.
 - Because it easily connect multiple electronic devices in the home and control them remotely.
 - Bluetooth, Wi-Fi and Zigbee are few examples of wireless technology
@@ -65,8 +67,6 @@
  - **connect Zigbee device with Bluetooth devices**
 
 
-<img src="https://csa-iot.org/wp-content/uploads/2022/04/Zigbee-Devices-New-Feature-Blog-01-768x403.png" alt="A thumbnail image" width="1000" height="auto">
-
 | Audience         | Goals                                    |
 |------------------|------------------------------------------|
 | **For Developers** | - Reduce system complexity                |
@@ -84,6 +84,33 @@
 - ZDD & ZVD establish a secure connection
 - communication : Bluetooth Low Energy
 - ZVD send command to ZDD
+
+<img src="https://docs.silabs.com/zigbee-direct/0.1/images/image2.png" alt="A thumbnail image" width="1000" height="auto">
+  
+**The Zigbee Direct Protocol is composed of three main services:**
+
+- Zigbee Direct Security Service: A mandatory service that establishes a secure BLE connection between the ZVD and ZDD.
+
+- Zigbee Direct Commissioning Service: A mandatory service that enables the ZVD to control certain actions of the ZDD.
+
+- Zigbee Direct Tunnel Service: An optional service that allows the ZVD to send and receive Zigbee Network Packets to and from the ZDD.
+
+**State Diagram showing the ZDD's provisioning**
+
+<img src="https://docs.silabs.com/zigbee-direct/0.1/images/image3.png" alt="A thumbnail image" width="1000" height="auto">
+
+### Open to be Provisioned State
+- **BLE Advertisements:** ZDD sends out BLE advertisements.
+- **BLE Link Establishment:** ZVD receives advertisements and establishes a BLE link with ZDD.
+- **Provisioning Session:** Secure BLE connection established between ZDD and ZVD.
+- **Network Configuration:** ZVD configures ZDD with network information for joining the Zigbee network.
+- **Timeout Handling:** If no provisioning occurs within the timeout period, ZDD transitions to BLE Interface OFF state.
+- **Reactivation Required:** Power-cycling or user interaction needed to reopen the BLE interface and re-enter Open to be Provisioned state.
+
+### Open to Connect ZVD State
+- **Network Connection:** ZDD is connected to a Zigbee network.
+- **BLE Interface On:** ZDD allows authorized ZVD access to the Zigbee network.
+- **Provisioning Session:** Unprovisioned ZVDs can establish a provisioning session with ZDD.
 
 #### ZIGBEE BLE
 
@@ -106,3 +133,4 @@
 #### REFERENCES
 
 - https://www.linkedin.com/pulse/how-use-zigbee-home-automation-mvavaindustrialco-ltd-/
+- https://docs.silabs.com/d/zigbee-direct/0.1/
